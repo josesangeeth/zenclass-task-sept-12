@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            function change()
+            {
+                const txt = document.querySelector('textarea');
+                const len=txt.value.length;
+                let count = document.querySelector('span');
+                count.innerHTML=len;
+            }
+        </script>    
+    </head>
+    <body>
+        <textarea name="tweet" id="tweet" maxlength="140" cols="30" rows="10" onkeyup="change()"> </textarea>
+        <span name="val" id="val">0</span>/140  
+    </body>   
+</html>    
